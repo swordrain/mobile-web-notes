@@ -49,11 +49,12 @@ Http服务器 - [http-server](https://github.com/indexzero/http-server)
 ## 新的语义
 结构上header、nav、section、article、aside、footer等
 
-表单上，支持更多类型的input
+表单上，支持更多类型的input，如url email date color number range week month等，支持更多的属性如autofocus form placeholder pattern placeholder required等
 
-date<input type="date" />
+其他元素比如有 meter progress
 
-color<input type="color" />
+
+
 
 
 
