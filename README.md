@@ -53,6 +53,7 @@ Http服务器 - [http-server](https://github.com/indexzero/http-server)
 
 其他元素比如有 meter progress
 
+![new html5 attr](https://github.com/swordrain/mobile-web-notes/blob/master/screenshot/new%20html5%20attr.png)
 
 
 
