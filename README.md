@@ -1191,6 +1191,29 @@ W(元素当前百分比宽度) / padding-bottom = 图片真实宽度 / 图片真
 * playing
 * timeUpdate
 
+**兼容性**
+
+iOS
+
+* preload - 不支持
+* load - 不太稳定，如果用load加载视频，可能无法返回缓冲状态，包括canPlayThrough和buffered等，移动端的缓存触发一般都是用play后再暂停的方式
+* 触发 - 可以依次触发多个视频，逐个play，新视频触发play后会自动暂停之前的视频，而有效触发过play的视频，即使暂停了仍然会继续缓冲
+* 播放 - play后，视频会停在第一帧进行加载，当加载到可以播放后，触发canPlay事件，之后视频才会播放
+* canPlayThrough - 视频缓冲量根据计算可以不停顿连续播放后，触发该事件 
+
+Android
+
+* playing - play后会直接触发playing，但此时视频并未真正播放
+* canPlay canPlayThrough - 不触发
+* 监听播放 - 无法有效监测视频是否开始播放，通常通过timeUpdate的监听来获得播放状态，而此时视频已经开始播放
+* buffered - 无法实时获取buffered的缓冲时长，且极不稳定，多数情况下只有在触发视频的时候缓冲值才会刷新一次
+* preload - 理论上可能支持，但是实际上无法判断preload是否生效以及其加载状态
+* 播放 - playing一开始就会触发，之后只要有缓冲就会播放，即使只缓冲了几帧，也会先播放完后再卡住等待缓冲
+* 触发 - 视频必须通过用户行为触发播放，一次行为只能触发一个视频，通过脚本触发也不行
+
+iOS的缓冲可以通过canPlay或canPlayThrough来判断，Android的缓冲通过progress事件监听，延迟一定时间后播放
+
+
 ###Audio
 mp3 wav能够在iOS和Android上运行，ogg只支持Android，其他格式wma、aac、flac、m4a可能有体积过大、兼容性或音质等问题
 
