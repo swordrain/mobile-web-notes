@@ -240,7 +240,7 @@ window.addEventListener('devicemotion', e => {
 })
 ```
 
-##离线和存储
+## 离线和存储
 
 **`.manifest`或`.appcache`文件**
 
@@ -453,21 +453,21 @@ function updateProgress(e){
 </body>
 ```
 
-##其他常用特性
+## 其他常用特性
 
 * History API(pushState replaceState window.addEventListener('popstate', (e)=>{}))
 * Drag&Drop
 * Web Workers
 * Performance API
 
-#CSS3
+# CSS3
 CSS3各模块详情[https://www.w3.org/Style/CSS/current-work](https://www.w3.org/Style/CSS/current-work)
 
 查询各属性在浏览器支持情况[http://caniuse.com/](http://caniuse.com/)
 
 使用Modernizr[https://modernizr.com](https://modernizr.com)检测浏览器支持CSS3
 
-##选择器
+## 选择器
 常用选择器
 
 * *
@@ -517,7 +517,7 @@ CSS3各模块详情[https://www.w3.org/Style/CSS/current-work](https://www.w3.or
 * ::before
 * ::after
 
-##响应式开发
+## 响应式开发
 * 物理像素
 * 逻辑像素
 * 像素比 - window.devicePixelRatio
@@ -557,7 +557,7 @@ CSS3各模块详情[https://www.w3.org/Style/CSS/current-work](https://www.w3.or
 	window.addEventListener('resize', resetFontSize, false)
 })()
 ```
-##动效
+## 动效
 * transform
 	* translate
 	* scale
@@ -584,8 +584,8 @@ CSS3各模块详情[https://www.w3.org/Style/CSS/current-work](https://www.w3.or
 	* animation-iteration-count
 	* animation-direction
 
-##常用特性
-###开放字体格式
+## 常用特性
+### 开放字体格式
 ```
 @font-face {
 	font-family:
@@ -617,7 +617,7 @@ CSS3各模块详情[https://www.w3.org/Style/CSS/current-work](https://www.w3.or
 }
 ```
 
-###背景
+### 背景
 * background-color
 * background-position
 * background-size (length / percentage / cover / contain)
@@ -636,7 +636,7 @@ background-origin
 ![background-clip](https://github.com/swordrain/mobile-web-notes/blob/master/screenshot/background-origin.png)
 
 
-###color
+### color
 * Color Name
 * HEX
 * RGB
@@ -648,34 +648,34 @@ background-origin
 * gradient
 * opacity
 
-###文字效果
+### 文字效果
 * text-shadow
 * text-overflow
 * word-wrap
 * word-break
 
-###边框
+### 边框
 * border
 * border-radius
 * border-image
 * box-shadow
 
-##预编译
+## 预编译
 * LESS
 * SASS
 * Compass
 
-#JavaScript
-##语法基础
-##事件
-###事件概述
+# JavaScript
+## 语法基础
+## 事件
+### 事件概述
 * 事件类型 event type
 * 事件目标 event target
 * 事件处理程序 event handler
 * 事件对象 event object
 * 事件传播 event propagation
 
-###事件委托
+### 事件委托
 ```
 //DOM0
 document.querySelector('#div').onclick = function(e){}
@@ -686,7 +686,7 @@ document.querySelector('#div').addEventListener('click', function(e){}, false) /
 
 可以委托到父节点，通过e.target判断触发元素，e.currentTarget表示事件代理的元素
 
-###移动端事件
+### 移动端事件
 **触摸事件**
 * touchstart
 * touchmove
@@ -740,32 +740,32 @@ devicemotion的event包含
 
 orientationchange监听方向变化，通过screen.orientation.angle获取方向，0和180表示竖屏，90和270表示横屏，iOS中通过window.orientation获取方向，0和180表示竖屏，90和-90表示横屏
 
-##作用域、闭包和this
+## 作用域、闭包和this
 
-##对象
+## 对象
 
-##异步编程
+## 异步编程
 * callback
 * promise
 * generator
 * async/await
 
-##模块化
+## 模块化
 
-##ES6
+## ES6
 
-#移动网页样式布局
-##静态布局
+# 移动网页样式布局
+## 静态布局
 整体缩放或使用媒体查询
 
-##居中
+## 居中
 
-##栅格
+## 栅格
 
-##Flex布局
-##动画优化
+## Flex布局
+## 动画优化
 
-#前端工程化
+# 前端工程化
 1. 规范代码
 2. js预处理
 3. css预处理
@@ -779,7 +779,7 @@ orientationchange监听方向变化，通过screen.orientation.angle获取方向
 
 
 
-#移动Web常用开发方式
+# 移动Web常用开发方式
 * 基于DOM(Zepto)
 * React
 * Vue
@@ -794,7 +794,7 @@ orientationchange监听方向变化，通过screen.orientation.angle获取方向
 5. FastClick库，通过MouseEvents自定义鼠标事件并立即触发事件响应
 
 
-#混合开发
+# 混合开发
 * WebView模式
 * JavaScriptCore模式
 * 微信小程序
@@ -846,7 +846,7 @@ iOS
 
 **React Native**
 
-#前端开发调试
+# 前端开发调试
 
 * 浏览器Chrome/Safari
 * 抓包工具Charles/Fiddler
@@ -860,7 +860,7 @@ iOS
 * 多浏览器兼容性测试平台F2etest
 * React调试React Developer Tools/Redux DevTools
 
-#前端单元测试
+# 前端单元测试
 * Jasmine
 * Mocha/Chai
 * Sinon
@@ -868,24 +868,24 @@ iOS
 * Istanbul
 * Benchmark.js基准测试
 
-#前端性能优化
-##常用网站性能优化指标
+# 前端性能优化
+## 常用网站性能优化指标
 网页的资源请求和加载阶段减少资源访问及加载阶段所消耗的时间。
 
 网页渲染阶段避免JS阻塞（把JS放底部），避免重新布局（必然引起重新绘制和合并，但一些特殊属性如opacity或transform可以在不同层单独绘制，而是直接执行合并图层，并且是在GPU的硬件渲染中）
 
 加快JS脚本的执行速度
 
-##Yahoo性能优化法则
+## Yahoo性能优化法则
 
-##性能优化工具
+## 性能优化工具
 * YSlow
 * PageSpeed
 * WebPagetest
 
-##Http协议头缓存
+## Http协议头缓存
 
-##资源按需加载
+## 资源按需加载
 * 基于RequireJS的按需加载
 * 基于Webpack的按需加载
 * 图片懒加载
@@ -909,7 +909,7 @@ function isShow(el){
 }
 ```
 
-##不同网络类型的优化实战
+## 不同网络类型的优化实战
 ```
 navigator.onLine
 window.addEventListener('online', ()=> {})
@@ -923,7 +923,7 @@ window.addEventListener('offline', ()=>{})
 
 # 移动页面开发
 ## 页面布局
-###Viewport
+### Viewport
 
 默认的Viewport为980px
 
@@ -999,11 +999,11 @@ var vp = document.getElementById('viewport')
 vp.setAttribute('content', 'width=变化值')
 
 ```
-###布局形式
+### 布局形式
 * 传统布局
 * 滑屏布局
 
-###Media Query
+### Media Query
 两种方式
 
 ```
@@ -1062,7 +1062,7 @@ vp.setAttribute('content', 'width=变化值')
 @media screen and (device-pixel-ration: 2){}
 ```
 
-###屏幕适应
+### 屏幕适应
 
 **百分比布局**
 
@@ -1103,7 +1103,7 @@ W(元素当前百分比宽度) / padding-bottom = 图片真实宽度 / 图片真
 })()
 ```
 
-###内容排布
+### 内容排布
 **视频和iFrame的自适应**
 
 对于16：9的视频，设置`padding-bottom`为56.25%(设置width和height都为100%)
@@ -1111,32 +1111,32 @@ W(元素当前百分比宽度) / padding-bottom = 图片真实宽度 / 图片真
 **水平垂直居中**
 
 
-##页面调试
+## 页面调试
 * Chrome开发工具(用chrome://inspect查看连接的设备)
 * iOS设备开启(Safari - 高级 - Web检查器)，然后在Safari的开发菜单里找到连接的设备
 
-##常用库和框架
+## 常用库和框架
 
 * jQuery Mobile
 * Zepto
 * Cocos2d
 * CreateJS(用FlashIDE可以导出代码)
 
-#技术创意形式
-##动画形式
-###CSS3
+# 技术创意形式
+## 动画形式
+### CSS3
 * transform
 * transition
 * animation
 
-###帧动画
+### 帧动画
 * 通过CSS3`timing-function`的`step()`函数控制
 * 通过JS控制Canvas
 * 通过JS控制CSS
 
-###Canvas
+### Canvas
 
-###SVG
+### SVG
 
 ```
 //描边动画
@@ -1165,9 +1165,9 @@ W(元素当前百分比宽度) / padding-bottom = 图片真实宽度 / 图片真
 //通过d:path还以实现复杂的曲线变形动画
 ```
 
-###Three.js
+### Three.js
 
-##移动设备Web API详解
+## 移动设备Web API详解
 ### Video
 ```
 <video src="movie.mp4" controls>
@@ -1214,7 +1214,7 @@ Android
 iOS的缓冲可以通过canPlay或canPlayThrough来判断，Android的缓冲通过progress事件监听，延迟一定时间后播放
 
 
-###Audio
+### Audio
 mp3 wav能够在iOS和Android上运行，ogg只支持Android，其他格式wma、aac、flac、m4a可能有体积过大、兼容性或音质等问题
 
 ```
@@ -1261,7 +1261,7 @@ mp3 wav能够在iOS和Android上运行，ogg只支持Android，其他格式wma�
 
 测试audio API的[例子](http://tgideas.qq.com/book/danceonfingers/chapter2/section2/audio_api/)
 
-###getUserMedia
+### getUserMedia
 Android4.4以上，部分浏览器或Webview需要https协议才能使用该API
 
 ```
@@ -1303,7 +1303,7 @@ fileReader.readAsDataURL(blob) // android chrome audio不支持blob
 audio.src = event.target.result
 ```
 
-###Web Speech
+### Web Speech
 * SpeechRecognition实现语音识别
 * SpeechSynthesis实现文本转语音合成
 * SpeechGrammar实现自定义语法创建
@@ -1327,7 +1327,7 @@ SpeechSynthesisUtterance的内容
 
 测试Web Speech API的[例子](http://tgideas.qq.com/book/danceonfingers/chapter2/section2/webspeech/)
 
-###Web Audio
+### Web Audio
 对音频数据进行分析处理，iOS6+和Android4.4+
 
 测试Web Speech API的[例子](http://sy.qq.com/brucewan/device-api/web-audio.html)
@@ -1385,7 +1385,7 @@ draw()
 
 处理节点，[参考](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Audio_API)
 
-###Geolocation API
+### Geolocation API
 兼容iOS6.0以上和Android2.3以上，iOS10需要https协议才能使用该API
 
 `getCurrentPosition()`用于获取一次地理位置，`watchPosition()`用于持续获取地理位置，直到`clearWatch()`取消
@@ -1444,14 +1444,14 @@ function showError(error){
 }
 ```
 
-###陀螺仪
+### 陀螺仪
 deviceOrientation API，deviceOrientation事件的回调会返回DeviceOrientationEvent Type的对象，包含alpha beta gamma三个属性
 
 alpha范围是0~360，beta范围是-180~180，gamma范围是-90~90
 
 deviceMotion API，deviceMotion事件会返回DeviceMotionEvent Type的对象，包含acceleration accelarationIncludingGravity rotationRate三个属性
 
-###设备震动
+### 设备震动
 iOS不支持，Android在4.4版本以上支持
 
 ```
@@ -1459,7 +1459,7 @@ navigator.vibrate(2000)
 navigator.vibrate([1000, 500, 1000])
 ```
 
-###电池状态
+### 电池状态
 ```
 var battery = navigator.battery||naivgator.webkitBattery||navigator.mozBattery||navigator.msBattery
 if(batter){
@@ -1481,7 +1481,7 @@ Battery API常用属性
 * dischargingtimechange
 * levelchange
 
-###环境光
+### 环境光
 Ambient Light，提供一个devivelight事件监听，返回event.value表示环境光的强度，单位是lux，目前只有Android的Firefox支持
 
 ```
@@ -1492,16 +1492,16 @@ if('ondevicelight' in window){
 }
 ```
 
-###网络信息
+### 网络信息
 一种是通过navigator的online、offline属性，或者通过`window.addEventListener('online/offline', e=>{})`，一种是通过Network Information API里的navigator.connection对象，对象有`connection.type`值表示网络连接的类型，也可以通过`connection.addEventListener('typechange', e=>{})`监听
 
-##WebVR
+## WebVR
 常用解决方案
 
 * A-frame
 * ThreeJS
 
-##创意点
+## 创意点
 * 基于微信录音接口
 * 基于微信语音识别
 * 基于摄像头和相册
@@ -1510,9 +1510,9 @@ if('ondevicelight' in window){
 * 基于手势
 * 基于Websocket
 
-#页面性能优化
-##资源优化
-###图像
+# 页面性能优化
+## 资源优化
+### 图像
 **用CSS属性减少使用图像**
 
 
@@ -1546,7 +1546,7 @@ SVG是一种矢量图形格式
 	* 控制图片的空隙
 	* 雪碧图建议手工合并
 
-###音频
+### 音频
 **移动端音频格式解析**
 
 主要支持的音频格式有wav、ogg、mp3，相比较而言mp3具有大小的较大优势
@@ -1574,7 +1574,7 @@ if(audioObj.currentTime >= timeEnd){
 }
 ```
 
-###视频
+### 视频
 **视频格式分析**
 
 * ogg - 带有Theora视频编码和Vorbis音频编码
@@ -1593,7 +1593,7 @@ if(audioObj.currentTime >= timeEnd){
 * 分辨率
 * 帧率
 
-###代码
+### 代码
 * 控制HTML的DOM层级
 * 处理空格
 * 简化命名
@@ -1601,8 +1601,8 @@ if(audioObj.currentTime >= timeEnd){
 * 脚本放尾部，必要时延迟加载
 * 合理使用CSS选择器
 
-##加载优化
-###浏览器分析
+## 加载优化
+### 浏览器分析
 **解析及加载原理**
 
 浏览器解析并完成请求的完整过程
@@ -1631,15 +1631,15 @@ if(audioObj.currentTime >= timeEnd){
 * 样式对常规文档流渲染过程的影响 - 在整个DOM树渲染完后对样式修改可能产生重绘和重排，尽量避免
 * JS对常规文档流渲染过程的影响 - 监听DOMContentLoaded和load事件
 
-###加载优化
+### 加载优化
 * 在DOMContentLoaded事件触发第一时间开始加载CSS、首屏图片及首屏交互设计的JS
 * 对用户交互行为触发的请求，可以将请求加载控制语句写到对应的交互行为监听事件中
 * 对于只需要后台静默加载的需求，可以等到所有资源加载完成后再加载，一般放在load事件处理
 
-##脚本优化
+## 脚本优化
 
-#页面效果验证
-##数据埋点
+# 页面效果验证
+## 数据埋点
 需要埋点的数据
 
 **PV/UV**
@@ -1657,7 +1657,7 @@ UV - 页面被访问的人次数，用cookie区分人次数
 
 [腾讯云分析](http://mta.qq.com/h5) [腾讯分析](http://v2.ta.qq.com)
 
-##分析数据
+## 分析数据
 
-##数据参考
+## 数据参考
 
