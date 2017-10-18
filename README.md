@@ -1168,6 +1168,9 @@ W(元素当前百分比宽度) / padding-bottom = 图片真实宽度 / 图片真
 ### Three.js
 
 ## 移动设备Web API详解
+
+[测试](http://tgideas.qq.com/webplat/info/news_version3/804/7104/7106/m5723/201506/354489.shtml)
+
 ### Video
 ```
 <video src="movie.mp4" controls>
@@ -1212,6 +1215,7 @@ Android
 * 触发 - 视频必须通过用户行为触发播放，一次行为只能触发一个视频，通过脚本触发也不行
 
 iOS的缓冲可以通过canPlay或canPlayThrough来判断，Android的缓冲通过progress事件监听，延迟一定时间后播放
+
 
 
 ### Audio
